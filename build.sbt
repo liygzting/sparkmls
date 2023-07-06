@@ -10,3 +10,4 @@ lazy val root = (project in file("."))
 //libraryDependencies += "org.apache.spark" %% "spark-core" % "3.4.1"
 //libraryDependencies += "org.apache.spark" %% "spark-sql_2.12" % "3.4.1"
 libraryDependencies += "org.apache.spark" %% "spark-mllib" % "3.4.1"
+libraryDependencies += "org.apache.sedona" %% "sedona-sql-3.4" % "1.4.1"
