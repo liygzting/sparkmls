@@ -9,8 +9,8 @@ object sedona01 {
 
     val sedona = SedonaContext.create(config)
     val rawDf = sedona.read.format("csv")
-      .option("delemiter", "\t").option("header", true)
-      .load("/home/liyg/Downloads/nybb.tsv")
+      .option("delemiter", "\t").option("header", "true")
+      .load("datas/nybb.tsv")
     rawDf.createOrReplaceTempView("rawdf")
     rawDf.show(5)
   }
